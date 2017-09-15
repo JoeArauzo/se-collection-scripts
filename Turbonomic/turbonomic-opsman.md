@@ -9,6 +9,7 @@ Follow these procedures to export the environment and download the diagnostic fi
 > The default credentials are **Username:** `administrator` and **Password:** `vmturbo`.
 4. Select the second from the last option, `Export Environment`, and click the `Download` button.
 5. Send a copy of the diagnostic file to your SE.
+
 &nbsp;
 
 -----
