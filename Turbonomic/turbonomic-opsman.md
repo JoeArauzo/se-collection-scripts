@@ -17,9 +17,9 @@ Follow these procedures to export the environment and download the diagnostic fi
 #### Manual Procedure
 1. Open a console or SSH session to the Turbonomic VM and logon as **Username:** `root` and **Password:** `vmturbo`.
 2. Run the following command:
-```Shell
-curl -s "http://localhost/vmturbo/api?inv.c&MarketManager&saveMarkets&data/repos/turbo.markets.topology"
-```
+    ```Shell
+    curl -s "http://localhost/vmturbo/api?inv.c&MarketManager&saveMarkets&data/repos/turbo.markets.topology"
+    ```
 > You may proceed if the command returns `true`.
 3. The diagnostic file can be generated manually by running the following command:
 ```Shell
