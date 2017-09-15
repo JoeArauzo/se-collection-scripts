@@ -20,17 +20,17 @@ Follow these procedures to export the environment and download the diagnostic fi
     ```Shell
     curl -s "http://localhost/vmturbo/api?inv.c&MarketManager&saveMarkets&data/repos/turbo.markets.topology"
     ```
-> You may proceed if the command returns `true`.
+    > You may proceed if the command returns `true`.
 3. The diagnostic file can be generated manually by running the following command:
-```Shell
-/srv/tomcat/script/appliance/vmtsupport.sh
-```
-> Please be patient as this may take a few minutes to complete.  Upon completion the command will return something similar to `123385094bytes written`.
+    ```Shell
+    /srv/tomcat/script/appliance/vmtsupport.sh
+    ```
+    > Please be patient as this may take a few minutes to complete.  Upon completion the command will return something similar to `123385094bytes written`.
 4. Run the following command to obtain the path to the diagnostic file:
-```Shell
-BKP=$(ll /tmp/*.zip | tail -1 | awk '{print $NF}')
-```
+    ```Shell
+    BKP=$(ll /tmp/*.zip | tail -1 | awk '{print $NF}')
+    ```
 5. Run the following command to submit the diagnostic file for analysis:
-6. ```Shell
-curl -# -F ufile=@$BKP http://upload.vmturbo.com/appliance/cgi-bin/vmtupload.cgi | tee /dev/null
-```
+    ```Shell
+    curl -# -F ufile=@$BKP http://upload.vmturbo.com/appliance/cgi-bin/vmtupload.cgi | tee /dev/null
+    ```
