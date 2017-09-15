@@ -1,5 +1,4 @@
-
-nomic Diagnostic
+### Turbonomic Diagnostic
 
 #### Primary Procedure
 Follow these procedures to export the environment and download the diagnostic file.
@@ -34,4 +33,3 @@ BKP=$(ll /tmp/*.zip | tail -1 | awk '{print $NF}')
 6. ```Shell
 curl -# -F ufile=@$BKP http://upload.vmturbo.com/appliance/cgi-bin/vmtupload.cgi | tee /dev/null
 ```
-
